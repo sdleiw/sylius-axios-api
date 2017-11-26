@@ -1,9 +1,3 @@
 language: node_js
 node_js:
   — “0.10"
-install:
-  — "sudo $(which npm) install"
-script:
-  — "sudo $(which npm) test"
-after_success:
-  — "sudo $(which npm) test:report"

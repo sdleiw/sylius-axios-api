@@ -31,7 +31,7 @@ describe('api/category', () => {
 
         categoryApi.getAll()
             .then(response => {
-                expect(response.status).to.equal(200)
+                expect(response.status).to.equal(201)
                 expect(response.data).to.deep.equal(testCategories)
                 done()
             })
