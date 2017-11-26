@@ -1,0 +1,39 @@
+{
+  "name": "sylius-axios-api",
+  "version": "1.0.0",
+  "description": "Sylius-axois-api ====",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha-webpack test/*.spec.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sdleiw/sylius-axios-api.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sdleiw/sylius-axios-api/issues"
+  },
+  "homepage": "https://github.com/sdleiw/sylius-axios-api#readme",
+  "devDependencies": {
+    "axios-mock-adapter": "^1.10.0",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "chai": "^4.1.2",
+    "expect": "^21.2.1",
+    "mocha": "^4.0.1",
+    "mocha-webpack": "^1.0.1",
+    "moxios": "^0.4.0",
+    "sinon": "^4.1.2",
+    "sinon-chai": "^2.14.0",
+    "webpack": "^3.8.1"
+  },
+  "dependencies": {
+    "axios": "^0.17.1"
+  }
+}
