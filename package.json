@@ -6,7 +6,8 @@
   "scripts": {
     "test": "mocha-webpack --opts test/mocha.opts",
     "watch": "npm run test --watch",
-    "coverage": "cross-env NODE_ENV=test nyc npm run test"
+    "coverage": "cross-env NODE_ENV=test nyc npm run test",
+    "test:report": "nyc report --reporter=text-lcov | coveralls"
   },
   "repository": {
     "type": "git",
@@ -30,6 +31,7 @@
     "babel-preset-stage-2": "^6.24.1",
     "babel-register": "^6.26.0",
     "chai": "^4.1.2",
+    "coveralls": "^3.0.0",
     "cross-env": "^5.1.1",
     "expect": "^21.2.1",
     "istanbul": "^0.4.5",
@@ -55,7 +57,7 @@
       "lcov",
       "text"
     ],
-		"all": true,
+    "all": true,
     "report-dir": "test/coverage",
     "sourceMap": false,
     "instrument": false
