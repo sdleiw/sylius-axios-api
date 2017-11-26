@@ -4,7 +4,8 @@
   "description": "Sylius-axois-api ====",
   "main": "index.js",
   "scripts": {
-    "test": "mocha-webpack test/*.spec.js"
+    "test": "mocha-webpack --opts test/mocha.opts",
+    "watch": "mocha-webpack --opts test/mocha.opts --watch"
   },
   "repository": {
     "type": "git",
@@ -26,6 +27,7 @@
     "babel-preset-stage-2": "^6.24.1",
     "chai": "^4.1.2",
     "expect": "^21.2.1",
+    "istanbul": "^0.4.5",
     "mocha": "^4.0.1",
     "mocha-webpack": "^1.0.1",
     "moxios": "^0.4.0",
@@ -35,5 +37,8 @@
   },
   "dependencies": {
     "axios": "^0.17.1"
+  },
+  "babel": {
+    "presets": ["env", "stage-2"]
   }
 }

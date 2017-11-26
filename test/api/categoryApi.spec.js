@@ -1,11 +1,10 @@
 import axios from 'axios'
 import MockAdapter from 'axios-mock-adapter'
-import expect from 'expect'
-import chai from 'chai'
-import appConfig from '../src/config.js'
-import categoryApi from '../src/categoryApi.js'
+import { expect } from 'chai';
+import appConfig from '../../src/config'
+import categoryApi from '../../src/api/categoryApi'
 
-const expect = chai.expect
+
 
 describe('api/category', () => {
     // @todo need a better way to deal with mock for all the api tests
@@ -34,7 +33,7 @@ describe('api/category', () => {
         return categoryApi.getAll()
             .then(response => {
                 expect(response.status).to.equal(200)
-                // expect(response.data).to.deep.equal(testCategories)
+                expect(response.data).to.deep.equal(testCategories)
             })
     })
 
@@ -46,7 +45,7 @@ describe('api/category', () => {
         return categoryApi.getByCode(code)
             .then(response => {
                 expect(response.status).to.equal(200)
-                // expect(response.data).to.deep.equal(testCategory)
+                expect(response.data).to.deep.equal(testCategory)
             })
     })
 })
