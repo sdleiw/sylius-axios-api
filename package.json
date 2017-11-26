@@ -45,6 +45,9 @@
     "axios": "^0.17.1"
   },
   "nyc": {
+    "include": [
+      "src/api/*.js"
+    ],
     "require": [
       "babel-register"
     ],
@@ -52,6 +55,7 @@
       "lcov",
       "text"
     ],
+		"all": true,
     "report-dir": "test/coverage",
     "sourceMap": false,
     "instrument": false
