@@ -2,9 +2,8 @@ import axios from 'axios'
 import MockAdapter from 'axios-mock-adapter'
 import { expect } from 'chai';
 import appConfig from '../../src/config'
+
 import categoryApi from '../../src/api/categoryApi'
-
-
 
 describe('api/category', () => {
     // @todo need a better way to deal with mock for all the api tests
@@ -37,7 +36,7 @@ describe('api/category', () => {
             })
     })
 
-    it('should get all category by code', () => {
+    it('should get category by code', () => {
         const testCategory = {name: 'category1'}
         const code = 'test1234'
         mock.onGet(appConfig.apiUrl + '/taxons/' + code + '?locale=' + appConfig.apiLocale).reply(200, testCategory)
