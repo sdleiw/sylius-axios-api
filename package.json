@@ -56,7 +56,8 @@
       "babel-register"
     ],
     "reporter": [
-      "text-lcov"
+      "text-lcov",
+      "text"
     ],
     "all": true,
     "report-dir": "test/coverage",
