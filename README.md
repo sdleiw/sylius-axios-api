@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/sdleiw/sylius-axios-api.svg?branch=master)](https://travis-ci.org/sdleiw/sylius-axios-api)
+
 Sylius-axois-api
 ====
 
