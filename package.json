@@ -6,8 +6,7 @@
   "scripts": {
     "test": "mocha-webpack --opts test/mocha.opts",
     "test:watch": "npm run test --watch",
-    "test:coverage": "cross-env NODE_ENV=test nyc npm run test",
-    "test:report": "npm test:coverage | coveralls"
+    "test:coverage": "cross-env NODE_ENV=test nyc npm run test"
   },
   "repository": {
     "type": "git",
