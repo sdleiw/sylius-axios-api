@@ -8,7 +8,6 @@
     "test:watch": "npm run test --watch",
     "test:coverage": "cross-env NODE_ENV=test nyc npm run test",
     "test:report": "cross-env NODE_ENV=test nyc report | coveralls"
-    
   },
   "repository": {
     "type": "git",
@@ -43,25 +42,10 @@
     "nyc": "^11.3.0",
     "sinon": "^4.1.2",
     "sinon-chai": "^2.14.0",
-    "webpack": "^3.8.1"
+    "webpack": "^3.8.1",
+    "webpack-node-externals": "^1.6.0"
   },
   "dependencies": {
     "axios": "^0.17.1"
-  },
-  "nyc": {
-    "include": [
-      "src/api/*.js"
-    ],
-    "require": [
-      "babel-register"
-    ],
-    "reporter": [
-      "text-lcov",
-      "text"
-    ],
-    "all": true,
-    "report-dir": "test/coverage",
-    "sourceMap": false,
-    "instrument": false
   }
 }

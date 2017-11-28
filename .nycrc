@@ -1,0 +1,15 @@
+{
+    "include": [
+        "src/api/*.js"
+    ],
+    "require": [
+        "babel-register"
+    ],
+    "reporter": [
+        "text-lcov",
+        "text"
+    ],
+    "report-dir": "test/coverage",
+    "sourceMap": false,
+    "instrument": false
+}

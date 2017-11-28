@@ -1,1 +1,2 @@
+--webpack-config webpack.coverage.config.js
 test/{,**/}*.spec.js
