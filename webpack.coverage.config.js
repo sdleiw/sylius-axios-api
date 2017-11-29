@@ -1,3 +1,4 @@
+var path = require('path')
 var nodeExternals = require('webpack-node-externals')
 var isCoverage = process.env.NODE_ENV === 'coverage'
 

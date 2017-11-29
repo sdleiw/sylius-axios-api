@@ -7,8 +7,8 @@
     "lint": "./node_modules/.bin/eslint **/*.js",
     "test": "mocha-webpack --opts test/mocha.opts",
     "test:watch": "npm run test --watch",
-    "test:coverage": "cross-env NODE_ENV=test nyc npm run test",
-    "test:report": "cross-env NODE_ENV=test nyc report | coveralls"
+    "test:coverage": "cross-env NODE_ENV=coverage nyc npm run test",
+    "test:report": "cross-env NODE_ENV=coverage nyc report | coveralls"
   },
   "repository": {
     "type": "git",
