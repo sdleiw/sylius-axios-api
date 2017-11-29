@@ -14,8 +14,8 @@
     "type": "git",
     "url": "https://github.com/sdleiw/sylius-axios-api.git"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": ["sylius", "axios", "shop-api"],
+  "author": "sdleiw",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/sdleiw/sylius-axios-api/issues"
@@ -23,7 +23,7 @@
   "homepage": "https://github.com/sdleiw/sylius-axios-api#readme",
   "devDependencies": {
     "axios-mock-adapter": "^1.10.0",
-    "standard-dev-dependencies": "^1.0.1"
+    "standard-dev-dependencies": "^1.0.2"
   },
   "dependencies": {
     "axios": "^0.17.1"
