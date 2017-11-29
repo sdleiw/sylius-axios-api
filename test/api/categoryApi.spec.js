@@ -1,6 +1,6 @@
 import axios from 'axios'
 import MockAdapter from 'axios-mock-adapter'
-import { expect } from 'chai';
+import { expect } from 'chai'
 import appConfig from '../../src/config'
 
 import categoryApi from '../../src/api/categoryApi'
