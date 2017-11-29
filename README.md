@@ -6,6 +6,4 @@ Sylius-axois-api
 
 promise based sylius api for pwa
 
-- api call still not coveraged `npm run coverage`
-- still no eslint
 - relativ import path
