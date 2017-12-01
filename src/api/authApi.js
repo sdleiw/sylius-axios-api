@@ -1,6 +1,11 @@
 import axios from 'axios'
 import appConfig from '../../src/config'
 
+/**
+ * auth api, login, register and fetch logged in user
+ *
+ * @module api/auth
+ */
 export default {
     /**
      * POST | login with email and password
