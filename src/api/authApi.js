@@ -3,7 +3,7 @@ import appConfig from '../../src/config'
 
 export default {
     /**
-     * POST | login
+     * POST | login with email and password
      *
      * @param {object} data login data object, email and password required
      * @returns {AxiosPromise} 200 | jwt token
@@ -34,6 +34,13 @@ export default {
 
         return axios.post(appConfig.apiUrl + '/register', payload)
     },
+
+    /**
+     * GET | fetch logged in user with jwt token
+     *
+     * @param {string} token jwt token
+     * @returns {AxiosPromise} 200 | user object
+     */
     getMe (token) {
         return axios.get(appConfig.apiUrl + '/me', {
             headers: { Authorization: 'Bearer ' + token }
