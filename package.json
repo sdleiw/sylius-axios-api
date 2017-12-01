@@ -9,7 +9,7 @@
     "test:watch": "npm run test --watch",
     "test:coverage": "cross-env NODE_ENV=coverage nyc npm run test",
     "test:report": "cross-env NODE_ENV=coverage nyc report | coveralls",
-    "doc": "./node_modules/.bin/jsdoc -d ./doc src/api"
+    "doc": "./node_modules/.bin/jsdoc -c ./jsdocconf.json -d ./doc src/api"
   },
   "repository": {
     "type": "git",
