@@ -2,13 +2,18 @@ import axios from 'axios'
 import appConfig from '../../src/config'
 import {toQueryString} from '../utils'
 
+/**
+ * Product API: get product, and list of products
+ * @module api/product
+ */
 export default {
+
     /**
-     * Get product list by taxon Code
+     * Get | fetch product list by taxon Code
      *
-     * @param code
-     * @param page
-     * @returns {AxiosPromise}
+     * @param {string} code taxon code
+     * @param {number} page page number
+     * @returns {AxiosPromise} 200 | product list
      */
     getList (code, page = 1) {
         const query = {
@@ -21,10 +26,10 @@ export default {
     },
 
     /**
-     * Get one product by product code
+     * Get | fetch product by Code
      *
-     * @param code product code
-     * @returns {AxiosPromise}
+     * @param {string} code product code
+     * @returns {AxiosPromise} 200 | product object
      */
     getByCode (code) {
         const query = {
@@ -33,11 +38,12 @@ export default {
         }
         return axios.get(appConfig.apiUrl + '/products/' + code + '?' + toQueryString(query))
     },
+
     /**
-     * Get one product by the given slug
+     * Get | fetch product by slug
      *
-     * @param slug
-     * @returns {AxiosPromise}
+     * @param {string} slug product slug
+     * @returns {AxiosPromise} 200 | product object
      */
     getBySlug (slug) {
         const query = {
@@ -46,10 +52,11 @@ export default {
         }
         return axios.get(appConfig.apiUrl + '/products-by-slug/' + slug + '?' + toQueryString(query))
     },
+
     /**
-     * @todo: api not stable
+     * Get | fetch latest product list
      *
-     * @returns {*|AxiosPromise}
+     * @returns {AxiosPromise} 200 | product list
      */
     getLatest () {
         const query = {
