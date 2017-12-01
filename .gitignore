@@ -6,6 +6,7 @@ yarn-debug.log*
 yarn-error.log*
 test/coverage
 .nyc_output/
+doc/
 
 # Editor directories and files
 .idea

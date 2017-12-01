@@ -8,13 +8,18 @@
     "test": "mocha-webpack --opts test/mocha.opts",
     "test:watch": "npm run test --watch",
     "test:coverage": "cross-env NODE_ENV=coverage nyc npm run test",
-    "test:report": "cross-env NODE_ENV=coverage nyc report | coveralls"
+    "test:report": "cross-env NODE_ENV=coverage nyc report | coveralls",
+    "doc": "./node_modules/.bin/jsdoc -d ./doc src/api"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/sdleiw/sylius-axios-api.git"
   },
-  "keywords": ["sylius", "axios", "shop-api"],
+  "keywords": [
+    "sylius",
+    "axios",
+    "shop-api"
+  ],
   "author": "sdleiw",
   "license": "ISC",
   "bugs": {
@@ -23,6 +28,7 @@
   "homepage": "https://github.com/sdleiw/sylius-axios-api#readme",
   "devDependencies": {
     "axios-mock-adapter": "^1.10.0",
+    "jsdoc": "^3.5.5",
     "standard-dev-dependencies": "^1.0.2"
   },
   "dependencies": {
