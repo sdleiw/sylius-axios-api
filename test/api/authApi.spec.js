@@ -1,9 +1,9 @@
 import axios from 'axios'
 import MockAdapter from 'axios-mock-adapter'
 import { expect } from 'chai'
-import appConfig from '../../src/config'
+import appConfig from '@/src/config'
 
-import authApi from '../../src/api/authApi'
+import authApi from '@/src/api/authApi'
 
 describe('api/auth', () => {
     // @todo need a better way to deal with mock for all the api tests

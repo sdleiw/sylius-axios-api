@@ -1,9 +1,9 @@
 import axios from 'axios'
 import MockAdapter from 'axios-mock-adapter'
 import { expect } from 'chai'
-import appConfig from '../../src/config'
+import appConfig from '@/src/config'
 
-import reviewApi from '../../src/api/reviewApi'
+import reviewApi from '@/src/api/reviewApi'
 
 describe('api/reviewApi', () => {
     let mock

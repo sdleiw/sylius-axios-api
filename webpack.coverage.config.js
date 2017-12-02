@@ -27,6 +27,11 @@ module.exports = {
             }
         )
     },
+    resolve: {
+        // add alias @ for application code directory
+        alias: {'@': path.resolve(__dirname)},
+        extensions: [ '.js' ]
+    },
     target: 'node', // webpack should compile node compatible code
     externals: [nodeExternals()], // in order to ignore all modules in node_modules folder
     devtool: 'inline-cheap-module-source-map'

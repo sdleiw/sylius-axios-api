@@ -22,7 +22,3 @@ promise based sylius api for pwa
 ### Api Doc
 
 `npm run doc`
-
-## Todo
-
-- relativ import path

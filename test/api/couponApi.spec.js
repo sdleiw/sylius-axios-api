@@ -1,9 +1,9 @@
 import axios from 'axios'
 import MockAdapter from 'axios-mock-adapter'
 import { expect } from 'chai'
-import appConfig from '../../src/config'
+import appConfig from '@/src/config'
 
-import couponApi from '../../src/api/couponApi'
+import couponApi from '@/src/api/couponApi'
 
 describe('api/couponApi', () => {
     let mock
