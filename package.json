@@ -1,6 +1,6 @@
 {
   "name": "sylius-axios-api",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Sylius-axois-api",
   "main": "index.js",
   "scripts": {
