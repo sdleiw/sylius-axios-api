@@ -1,8 +1,8 @@
 {
   "name": "sylius-axios-api",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "Sylius-axois-api",
-  "main": "index.js",
+  "main": "./src/api/index.js",
   "scripts": {
     "lint": "./node_modules/.bin/eslint **/*.js",
     "test": "mocha-webpack --opts test/mocha.opts",
